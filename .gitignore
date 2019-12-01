@@ -1,7 +1,14 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+# ignore pycharm settings start
 .idea/.gitignore
 .idea/inspectionProfiles/
 .idea/misc.xml
 .idea/modules.xml
 .idea/python.iml
 .idea/vcs.xml
+# ignore pycharm settings end
+
+
+# ignore dataset directory
+/data/
