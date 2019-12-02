@@ -6,8 +6,8 @@ from multiprocessing import Process
 
 
 
-in_path = r'./data/val.json'
-prediction_path = r'./data/bbox_my_val_results.json'
+in_path = r'../../../data/caculate_gd_people/val.json'
+prediction_path = r'../../../data/caculate_gd_people/bbox_my_val_results.json'
 
 
 def cal(annotation_file_path, predict_file_path):
@@ -28,6 +28,7 @@ def cal(annotation_file_path, predict_file_path):
             accuracy_list.append(this_accuracy)
         final_average_accuracy = \
             sum(accuracy_list) / len(accuracy_list) * 100
+        print("Every accuracy = ", accuracy_list)
         print("Final average accuracy = {:.4f}%".format(final_average_accuracy))
         print("The length of final average accuracy is ", len(accuracy_list))
     return
