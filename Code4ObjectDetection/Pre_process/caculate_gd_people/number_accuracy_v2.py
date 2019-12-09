@@ -7,7 +7,7 @@ from multiprocessing import Process
 
 
 in_path = r'../../../data/caculate_gd_people/val.json'
-prediction_path = r'../../../data/caculate_gd_people/bbox_my_val_results.json'
+prediction_path = r'../../../data/caculate_gd_people/bbox_my_val_4869_results.json'
 
 
 def cal(annotation_file_path, predict_file_path):
