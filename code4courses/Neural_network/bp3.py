@@ -65,7 +65,7 @@ for k in range(max_steps):
         ##反馈，修改参数
         dB2 = -1 * threshold * e
         dW2 = e * threshold * np.transpose(hide_out)
-        print("hide_out", hide_out)
+        # print("hide_out", hide_out)
         dB1 = np.zeros((hidesize, 1))
         for j in range(hidesize):
             dB1[j] = np.dot(np.dot(W2[0][j], sigmoid(hide_in[j])), (1 - sigmoid(hide_in[j])) * (-1) * e * threshold)
